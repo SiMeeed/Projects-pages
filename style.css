@@ -1,0 +1,97 @@
+/* Base styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: radial-gradient(circle at 200% 10%, rgba(255, 255, 255, 0.3), #010c1b 80%);
+  color: #fff;
+}
+
+/* Hero section */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: transparent;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #cbd3ff;
+}
+
+/* Game container layout */
+.game-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Game card styles */
+.game-card {
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  width: calc(25% - 20px);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+   
+  height: 100%;
+}
+
+.game-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+.game-image {
+  width: 100%;
+  display: block;
+}
+
+/* Call-to-action button */
+.cta-button {
+  display: block;
+  background: #218d4e;
+  color: white;
+  padding: 15px;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.cta-button:hover {
+  background: #8cdf8f;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .game-card {
+    width: calc(33.333% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .game-card {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 500px) {
+  body {
+    background: radial-gradient(circle at 200% 10%, #010c1b, rgba(255, 255, 255, 0.3) 80%);
+  }
+  .game-card {
+    width: 100%;
+  }
+}
